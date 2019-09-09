@@ -1,0 +1,17 @@
+#cmtBtn {
+    margin: 1em;
+}
+#cmtBtn a {
+    display: flow-root;
+}
+#comment {
+    margin: 1em;
+}
+
+.delete {
+    display: inline;
+}
+
+.edit-del-btn{
+    padding-left: 78%
+}
