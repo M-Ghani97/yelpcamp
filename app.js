@@ -27,7 +27,7 @@ app.set("view engine", "ejs");
 mongoose.connect("mongodb+srv://M_Ghani97:jx2pn407z@firstcluster-ac9wv.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true 
     }).then(() => {
         console.log("DB Connected!");
-    }).catch(err => {
+    }).catch(err => {   
         console.log(err.message);
     });
 app.use(express.static(__dirname + "/public"));
