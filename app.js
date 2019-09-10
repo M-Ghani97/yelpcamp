@@ -19,12 +19,10 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 
-
-
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 // mongoose.connect("mongodb://localhost/yelp_camp", { useNewUrlParser: true });
-mongoose.connect("mongodb+srv://M_Ghani97:jx2pn407z@firstcluster-ac9wv.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true 
+mongoose.MongoClient.connect("mongodb+srv://M_Ghani97:jx2pn407z@firstcluster-ac9wv.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true 
     }).then(() => {
         console.log("DB Connected!");
     }).catch(err => {   
